@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { categories } from '../../shared/constants/data.model';
 
 @Component({
   selector: 'app-product-category',
@@ -10,19 +11,7 @@ import { CommonModule } from '@angular/common';
 })
 export class ProductCategoryComponent {
 title: string = 'All Departement';
-categories = [
-  {categoryId: 1, categoryName: 'Fresh Meat'},
-  {categoryId: 2, categoryName: 'Vegetables'},
-  {categoryId: 3, categoryName: 'Fruit & Nut Gifts'},
-  {categoryId: 4, categoryName: 'Fresh Berries'},
-  {categoryId: 5, categoryName: 'Ocean Foods'},
-  {categoryId: 6, categoryName: 'Butter & Eggs'},
-  {categoryId: 7, categoryName: 'Fastfood'},
-  {categoryId: 8, categoryName: 'Fresh Onion'},
-  {categoryId: 9, categoryName: 'Papayaya & Crisps'},
-  {categoryId: 10, categoryName: 'Oatmeal'},
-  {categoryId: 11, categoryName: 'Fresh Bananas'},
-];
+categories = categories;
 }
 
 
@@ -33,4 +22,10 @@ Interpolation (One-Way Binding {{ expression }}):
 -------------------------------------------------
 Interpolation is a one-way binding technique where values from the component class are bound to the HTML 
 template It is denoted by double curly braces {{ }}.
+
+
+Property Binding :
+------------------
+(One-Way Binding I [property]="expression"): 
+Property binding allows you to set the value of an HTML element property to the value of a component property. It is denoted by square brackets [].
 */
